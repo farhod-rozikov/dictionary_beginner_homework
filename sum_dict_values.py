@@ -1,3 +1,6 @@
+from ipaddress import summarize_address_range
+
+
 def sum_dict_values(data: dict) -> int:
     '''
     Return the sum of all values in a dictionary.
@@ -6,4 +9,4 @@ def sum_dict_values(data: dict) -> int:
     Returns:
         int: The sum of all values in the dictionary
     '''
-    return 
+    return sum(data.values())
