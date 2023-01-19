@@ -6,4 +6,4 @@ def find_int_keys(data: dict) -> list:
     Returns:
         list: A list of all keys in the dictionary that are integers.
     """
-    return 
+    return [k for k in data.keys() if type(k) == int]
