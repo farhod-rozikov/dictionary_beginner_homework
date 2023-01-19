@@ -7,4 +7,10 @@ def get_max_age_user_name(data:list) -> str:
     Returns:
         str: The name of the user with the maximum age in the dictionary
     """
-    return 
+    max_age = {}
+    i = 0
+    for _dict in data:
+        if i < _dict['age']:
+            i = _dict['age']
+            max_age = _dict
+    return max_age['name']
