@@ -1,3 +1,6 @@
+from sum_dict_values import sum_dict_values
+
+
 def sum_even_values(data: dict) -> int:
     '''
     Return the sum of all even values in a dictionary.
@@ -6,4 +9,4 @@ def sum_even_values(data: dict) -> int:
     Returns:
         int: The sum of all even values in the dictionary
     '''
-    return 
+    return sum([v for v in data.values() if not v % 2])
