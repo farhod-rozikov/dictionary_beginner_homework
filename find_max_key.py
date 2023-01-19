@@ -5,7 +5,5 @@ def find_max_key(data: dict):
         data (dict): A dictionary of values
     Returns:
         int: The maximum key in the dictionary.
-    """
-    m = [k for k in data.keys()]
-    m.sort()    
-    return m[0]
+    """    
+    return max(data.keys())
